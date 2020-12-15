@@ -1,0 +1,77 @@
+/*
+    Author: Hyana,  https://www.geeksforgeeks.org/how-to-insert-new-row-at-a-certain-index-in-a-table-in-jquery/
+    Some of the code was copy pasted from geeksforgeeks and modified
+*/
+
+/* css for viewCourse.html*/
+table { 
+    margin: 0 auto; 
+    font-size: large; 
+} 
+
+th { 
+    font-weight: bold; 
+    padding: 10px; 
+    text-align: center; 
+    background-color: #d4d23098; 
+} 
+
+td{
+    background-color: #37aee698; 
+    font-weight: bold; 
+    padding: 10px; 
+    text-align: center; 
+    font-weight:lighter; 
+}
+
+h1 { 
+    text-align: center; 
+    color: black; 
+    font-size: xx-large; 
+} 
+
+#major, #majorCourse{
+    z-index: 1;
+    background-color: rgb(235, 221, 34);
+    padding: 8px 16px;
+    margin-bottom: 6px;
+    display: block;
+    border: 2px solid transparent;
+    display: inline-block;
+    float: left;
+}
+  
+select > option {
+    padding: inherit;
+}
+
+#addBtn{
+    background-color: rgb(34, 179, 46);
+    transition-duration: 0.4s;
+    padding: 10px 20px;
+    border: none;
+    color: white;
+    margin-left: 6px;
+    display: inline-block;
+    float: left;
+}
+
+#addBtn:hover{
+    background-color: darkcyan;
+    color:white;
+}
+
+.removeBtn{
+    background-color: rgb(231, 40, 40);
+    transition-duration: 0.4s;
+    padding: 10px 20px;
+    border: none;
+    color: white;
+    margin-left: 6px;
+    display: inline-block;
+}
+  
+.removeBtn:hover{
+    background-color: darkcyan;
+    color:white;
+}

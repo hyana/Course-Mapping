@@ -1,0 +1,42 @@
+<head>
+<meta name="author" content="Hyana Kang">
+</head>
+<div class = "left">
+<h1>Majors.json</h1> 
+<select id = "majorCourse">
+<option value="None">Select Department</option>
+</select>
+<form action="php/admin/rmMajor.php" method = "POST">
+<table id='majorTable'> 
+<tr> 
+    <th>Courses</th> 
+    <th><input type="submit" class = "removeBtn" value="REMOVE"></th> 
+</tr> 
+</form>
+</table>
+</div>
+
+
+<div class = "right">
+<h1>Courses.json</h1> 
+<select id = "major">
+<option value="None">Select Department</option>
+</select>
+<button id = "addBtn" onclick="document.getElementById('add').style.display='block'">Add Course</button>
+
+<form action="php/admin/rmCourse.php" method = "POST">
+<table id='courseTable'> 
+<tr> 
+    <th>Courses</th> 
+    <th>Title</th> 
+    <th>Credit</th> 
+    <th>Prerequisites</th> 
+    <th>Corequisites</th> 
+    <th>Required For</th> 
+    <th>Suggested For</th> 
+    <th>Overlap</th> 
+    <th><input type="submit" class = "removeBtn" value="REMOVE"></th> 
+</tr> 
+</form>
+</table>
+</div>

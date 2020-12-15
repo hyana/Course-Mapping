@@ -1,0 +1,88 @@
+@import url("https://fonts.googleapis.com/css2?family=Bitter:wght@400;500&family=EB+Garamond&family=Piazzolla:wght@200&family=Playfair+Display&display=swap");
+
+body {
+  font-family: "Bitter", serif;
+}
+
+#logo {
+  text-align: center;
+  font-family: "Playfair Display", serif;
+  background-size: cover;
+  width: 330px;
+  background-color: rgb(26, 44, 87);
+  font-style: italic;
+  font-size: xx-large;
+  color:white;
+  pointer-events:none;
+}
+
+h2 {
+  font-family: "Piazzolla", serif;
+}
+
+
+/* Style the tab */
+.tab {
+  overflow: hidden;
+  background-color: rgb(32, 124, 177);
+  height: 80px;
+}
+
+/* Style the buttons inside the tab */
+.tab button {
+  overflow: hidden;
+  background-color: inherit;
+  float: left;
+  border: none;
+  outline: none;
+  height: inherit;
+  cursor: pointer;
+  padding: 16px 20px;
+  transition: 0.3s;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  font-family: sans-serif;
+  width: 15%;
+}
+
+/* Change background color of buttons on hover */
+.tab button:hover {
+  background-color: rgb(72, 105, 182);
+}
+
+/* Create an active/current tablink class */
+.tab button.active {
+  background-color: rgb(13, 29, 66)
+}
+
+/* Style the tab content */
+.tabcontent {
+  display: none;
+  padding: 20px 50px;
+  -webkit-animation: fadeIn 0.7s;
+  animation: fadeIn 0.7s;
+}
+
+/* Fade in tabs */
+@-webkit-keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+#inst{
+  line-height: 1.6;
+}

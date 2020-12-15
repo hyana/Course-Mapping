@@ -1,0 +1,70 @@
+Overview: ----------------------------------------------
+An visual and interactive overview of the connections between different courses in terms of requirements and building a major.
+A user can easily figure out how they are tracking for major requirements, and compare multiple majors. A user can also look at what other options their course preparation opens up for them. 
+
+----------------------------------------------
+                  USER'S VIEW
+----------------------------------------------
+
+Details: ----------------------------------------------
+There would be a 4 column schedule for all 4 years and a checklist for each of the majors. When a major is checked off, a tree of all the major requirements appears. The user can drag one of the nodes from the tree to a column in the schedule. Clicking on a node will show possible courses that meet the requirement and allow the user to select one. There will be arrows between the nodes to represent prerequisites. A user cannot place the nodes so that a prerequisite comes after the class that needs it. 
+Double clicking on a specific course would allow the user to see all the other courses that have it as a prerequisite, and all the courses that it has as prerequisite.
+Can highlight the semester the user is registering for / lock semesters that are in the past. 
+The is always a button to make a new tab in the upper right corner 
+When a new tab is made, it is called “Untitled”. A tab has a pathway table to work with.
+
+Core Abilities: ----------------------------------------------
+   Saves the user’s tabs (probably automatically) with JSON on the server
+   Click and drag, but limited by placement of courses so that a prerequisite always comes before the course that requires it. 
+
+Potential Abilities: ----------------------------------------------
+   The specific placement in terms of what year is only strict for the current semester (so it can overlap between two years if placed that way). It does show the order they need to come in by restricting placement in that way.
+   Can highlight the courses the user is planning to register for, maybe have a Plan A and back-ups
+   Can click something to fade everything that is not relevant to a selected major
+   Provides overall data on when a course is usually taken, and what most users take after a given course, etc.
+
+
+----------------------------------------------
+                  SPECIFICS
+----------------------------------------------
+
+Homepage
+ Directions to use, explanation of the site
+ Links to Course Catalog and Course Search
+ Button to create a tab and start building a pathway
+ Login Tab
+ Tab
+
+Admin vs User:
+    Admin:
+      Add and remove majors and courses
+     Change requirements / prerequisites
+
+    User:
+     Make Course Pathways
+     Access Course Pathways 
+
+Server vs Client:
+    Server:
+      Data on courses and majors
+      Gathered data on how people usually structure their schedules
+      Saved user course pathways, and the versions of pathways that are auto-saved as the user works on them
+
+    Client:
+      Course pathways being worked on. 
+
+
+----------------------------------------------
+           IMPLEMENTATION OVERVIEW
+----------------------------------------------
+
+Model:  ----------------------------------------------
+  The general information on courses and major requirements are stored in two JSON files. They are organized   as described in the following section. [Prototype Version Completed]
+
+  User created pathways are stored in JSON files on the server. 
+
+
+View:  ----------------------------------------------
+
+Controller:  ----------------------------------------------
+

@@ -1,0 +1,47 @@
+<head>
+    <meta name="author" content="Hyana Kang">
+</head>
+<!--
+    https://www.w3schools.com/howto/howto_css_login_form.asp
+    This code was copy pasted from w3schools and modified
+-->
+<div id = "add" class = "modal">
+<form class = "modal-content animate" action="php/admin/addCourse.php" method="post">
+    <div class = "imgcontainer">
+        <span onclick="document.getElementById('add').style.display='none'"
+        class="close" title="Close Modal">&times;</span>
+        <h2 style = "float:center"> Add Course</h2>
+    </div>
+    <div class="container">
+    <label for="major"><b>Department</b></label>
+    <input type="text" placeholder="Enter Department" name="major" required>
+
+    <label for="num"><b>Course Number</b></label>
+    <input type="number" placeholder="Enter Course Number" name="num" required>
+
+    <label for="title"><b>Title</b></label>
+    <input type="text" placeholder="Enter Title" name="title" required>
+
+    <label for="credit"><b>Credit</b></label>
+    <input type="number" placeholder="Enter Credit" name="credit" required>
+
+    <label for="prereqs"><b>Prerequisites</b></label>
+    <input type="text" placeholder="Enter Prerequisites" name="prereqs">
+
+    <label for="coreqs"><b>Corequisites</b></label>
+    <input type="text" placeholder="Enter Corequisites" name="coreqs">
+
+    <label for="reqfor"><b>Required For</b></label>
+    <input type="text" placeholder="Enter Next Courses" name="reqfor">
+
+    <label for="sugfor"><b>Suggested For</b></label>
+    <input type="text" placeholder="Enter Suggested For" name="sugfor">
+
+    <label for="overlap"><b>Overlap</b></label>
+    <input type="text" placeholder="Enter Overlapped Courses" name="overlap">
+
+    <button type="submit" class = "addCourse">Add Course</button>
+</div>
+</form>
+</div>
+ 

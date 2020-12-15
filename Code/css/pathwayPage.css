@@ -1,0 +1,121 @@
+/* Style the message */
+.info {
+  background-color: rgb(241, 233, 158);
+  font-size: 1vw;
+  color: #91712b;
+  border: 1px solid #c9a559;
+  border-radius: 2%;
+  margin: 10px 0px;
+  padding: 5px 10px;
+  display: none;
+}
+
+/* Style the pathway table */
+.pathTable {
+  position: absolute;
+  top: 310px;
+  left: 50px;
+  border-collapse: collapse;
+  margin: auto;
+  width: 90%;
+  text-align: center;
+}
+
+.pathTable td,
+th {
+  border: 1px solid #dddddd;
+  text-align: left;
+  padding: 8px;
+  width: 25%;
+}
+
+.pathTable tr:first-child {
+  height: 100px;
+  background-color: #207cb138;
+}
+
+.pathTable tr:nth-child(2) {
+  background-color: #3148ad;
+  color: #ebebeb;
+}
+
+.pathTable tr:nth-child(3) {
+  height: 500px;
+}
+
+/* Position the div where courseBlock will be in */
+.pathwayContent {
+  top: 315px;
+  left: 50px;
+  width: 90%;
+  height: 600px;
+}
+
+/* Style movable course element */
+.courseBlock {
+  position: absolute;
+  cursor: move;
+  z-index: 99999;
+  background-color: #cbcffa;
+  text-align: center;
+  border: 1px solid #868686;
+  width: 100px;
+  height: 70px;
+  top: 300px;
+  left: 100px;
+}
+
+/* Position the svg */
+svg {
+  position: absolute;
+  top: 315px;
+  left: 50px;
+  width: 100%;
+  height: 100%;
+}
+
+/* Style the line */
+.arrowLine {
+  stroke: rgb(69, 74, 145);
+  stroke-width: 2;
+  marker-end: url(#markerArrow);
+  position: absolute;
+}
+
+select {
+  width: 30%;
+  padding: 16px 20px;
+  border: none;
+  border-radius: 4px;
+  background-color: #f1f1f1;
+}
+
+.courseBtn,
+.active {
+  background-color: rgb(11, 104, 158);
+  transition-duration: 0.4s;
+  margin: 4px 8px;
+  padding: 15px 20px;
+  border: none;
+  color: white;
+}
+
+.unsavedBtn {
+  background-color: rgb(250, 190, 13);
+  transition-duration: 0.4s;
+  margin: 4px 8px;
+  padding: 15px 20px;
+  border: none;
+  color: #0D1D42;
+}
+
+.courseBtn:hover,
+.active:hover {
+  background-color: darkcyan;
+  color: white;
+}
+
+.unsavedBtn:hover {
+  background-color: rgb(255, 158, 30);
+  color: #0D1D42;
+}
